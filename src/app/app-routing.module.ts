@@ -4,7 +4,7 @@ import { PaginaNaoEncontradaComponent } from './core/pagina-nao-encontrada.compo
 import { AutorComponent } from './core/autor/autor.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'autor', pathMatch: 'full' },
   { path: 'autor', component: AutorComponent },
   {path:'pagina-nao-encontrada', component:PaginaNaoEncontradaComponent},
   { path:'**', redirectTo:'pagina-nao-encontrada', pathMatch:'full' }
