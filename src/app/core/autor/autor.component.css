@@ -1,0 +1,17 @@
+.area-botao{
+    position: relative;
+}
+
+.area-botao button{
+    position: absolute;
+    right: 1.1vw;
+    top:0;
+}
+
+@media screen and (max-width:768px){
+    .area-botao button{
+        right: 2vw;
+        top: 0;
+        width: 95%;
+    }
+}
