@@ -23,16 +23,5 @@ export class AutorComponent implements OnInit {
       nacionalidade:[autor.nacionalidade]
     });
   }
-  /*
-  createForm(cliente: Cliente) {
-    this.formCliente = new FormGroup({
-      nome: new FormControl(cliente.nome),
-      tipo: new FormControl(cliente.tipo),
-      genero: new FormControl(cliente.genero),
-      dataNascimento: new FormControl(cliente.dataNascimento),
-      observacao: new FormControl(cliente.observacao),
-      inativo: new FormControl(cliente.inativo)
-    })
-  }
-  */ 
+ 
 }

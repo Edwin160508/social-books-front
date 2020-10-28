@@ -9,15 +9,15 @@
         <div class="ui-g ui-fluid">
             <div class="ui-g-6 ui-md-8 ui-sm-12 ">
                 <label for="nome">Nome *:</label>
-                <input type="text" name="nome" pInputText />                
+                <input type="text" id="nome" name="nome" pInputText />                
             </div>
             <div class="ui-g-3 ui-md-4 ui-sm-12 ">
-                <label for="nome">Data Nascimento *:</label>
-                <input type="text" name="dataNascimento" pInputText/>                
+                <label for="nome">Data Nascimento *:</label>                
+                <p-calendar id="dataNascimento" name="dataNascimento" [showIcon]="true"></p-calendar>
             </div>
             <div class="ui-g-3 ui-md-12 ui-sm-12 ">                
                 <label for="nome">Nacionalidade *:</label>
-                <input type="text" name="nacionalidade" pInputText/>                
+                <input type="text" id="nacionalidade" name="nacionalidade" pInputText/>                
             </div>
             <div class="ui-g-3 ui-md-12 ui-sm-12 container-botoes">  
                 <div>
