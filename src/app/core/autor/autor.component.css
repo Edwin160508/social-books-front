@@ -1,10 +1,24 @@
+.container{
+    max-width: 1200px;
+}
 .container-botoes{
-    margin-left: 55vw;
+    margin-left: 65%;
 }
 .container-botoes button{
     width: auto;
-    margin-right: 1.5vw;
+    margin-right: 15px;
 }
+/*@media screen and (min-width:992px) and (max-width:1999px){
+    .container-botoes{
+        margin-left: 73%;
+    }
+}*/
+@media screen and (min-width:1200px){
+    .container-botoes{
+        margin-left: 78%;
+    }
+}
+
 @media screen and (max-width:768px){
     div > p-button{
         width: 100%;
