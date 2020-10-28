@@ -4,7 +4,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AutorComponent } from './autor/autor.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada.component';
 /* Modulos do Primng*/
-import { ButtonModule, InputTextModule } from 'primeng/primeng';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [AutorComponent, PaginaNaoEncontradaComponent],
