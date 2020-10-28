@@ -2,33 +2,29 @@
     max-width: 1200px;
 }
 .container-botoes{
-    margin-left: 65%;
+    position: relative;
 }
 .container-botoes button{
     width: auto;
     margin-right: 15px;
 }
-/*@media screen and (min-width:992px) and (max-width:1999px){
-    .container-botoes{
-        margin-left: 73%;
-    }
-}*/
-@media screen and (min-width:1200px){
-    .container-botoes{
-        margin-left: 78%;
-    }
+.container-botoes div{
+    position: absolute;
+    right: 0;
 }
 
 @media screen and (max-width:768px){
     div > p-button{
         width: 100%;
     } 
-    .container-botoes{
-        margin-left: 0;
-    } 
+     
     .container-botoes button{
         width: 100%;
         margin-right: 0;
         margin-bottom: 1.5vh;
+    }
+    .container-botoes div{
+        position: relative;
+        
     }
 }
