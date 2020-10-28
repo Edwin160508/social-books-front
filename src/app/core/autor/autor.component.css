@@ -1,6 +1,20 @@
-
+.container-botoes{
+    margin-left: 55vw;
+}
+.container-botoes button{
+    width: auto;
+    margin-right: 1.5vw;
+}
 @media screen and (max-width:768px){
     div > p-button{
         width: 100%;
-    }    
+    } 
+    .container-botoes{
+        margin-left: 0;
+    } 
+    .container-botoes button{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5vh;
+    }
 }
