@@ -23,5 +23,15 @@ export class AutorComponent implements OnInit {
       nacionalidade:[autor.nacionalidade]
     });
   }
+
+  submitForm(){
+    console.log('Submetido');
+    console.log(this.formAutor.value);
+    this.limparCampos();
+  }
+
+  limparCampos(){
+    this.createForm(new Autor);
+  }
  
 }

@@ -9,20 +9,20 @@
         <div class="ui-g ui-fluid">
             <div class="ui-g-6 ui-md-8 ui-sm-12 ">
                 <label for="nome">Nome *:</label>
-                <input type="text" id="nome" name="nome" pInputText />                
+                <input type="text" id="nome" name="nome" formControlName="nome" pInputText />                
             </div>
             <div class="ui-g-3 ui-md-4 ui-sm-12 ">
                 <label for="nome">Data Nascimento *:</label>                
-                <p-calendar id="dataNascimento" name="dataNascimento" [showIcon]="true" dateFormat="dd/mm/yy"></p-calendar>
+                <p-calendar id="dataNascimento" name="dataNascimento" formControlName="dataNascimento" [showIcon]="true" dateFormat="dd/mm/yy"></p-calendar>
             </div>
             <div class="ui-g-3 ui-md-12 ui-sm-12 ">                
                 <label for="nome">Nacionalidade *:</label>
-                <input type="text" id="nacionalidade" name="nacionalidade" pInputText/>                
+                <input type="text" id="nacionalidade" name="nacionalidade" formControlName="nacionalidade" pInputText/>                
             </div>
             <div class="ui-g-3 ui-md-12 ui-sm-12 container-botoes">  
                 <div>
                     <button pButton type="button" label="Cancelar" ></button>
-                    <p-button label="Cadastrar" styleClass="ui-button-info"></p-button>            
+                    <p-button label="Cadastrar" styleClass="ui-button-info" (click)="submitForm()"></p-button>            
                 </div>              
             </div>
         </div>
