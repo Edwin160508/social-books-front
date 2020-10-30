@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Autor } from './shared/autor';
 
 @Component({
@@ -14,24 +14,31 @@ export class AutorComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    this.createForm(new Autor());
+    this.createForm();
   }
-  createForm(autor: Autor){
+  createForm(){
     this.formAutor = this.formBuilder.group({
-      nome:[autor.nome],
-      dataNascimento:[autor.dataNascimento],
-      nacionalidade:[autor.nacionalidade]
+      nome:['', [Validators.required, Validators.minLength(3)]],
+      dataNascimento:[null, Validators.required],
+      nacionalidade:['', Validators.required]
     });
   }
 
   submitForm(){
     console.log('Submetido');
-    console.log(this.formAutor.value);
+    //console.log(this.formAutor.value);
+    let autor:Autor = new Autor();
+    if(this.formAutor.valid){
+      autor.nome = this.formAutor.value.nome;
+      autor.dataNascimento = this.formAutor.value.dataNascimento;
+      autor.nacionalidade = this.formAutor.value.nacionalidade;
+    }
+    console.log(autor);
     this.limparCampos();
   }
 
   limparCampos(){
-    this.createForm(new Autor);
+    this.createForm();
   }
  
 }
